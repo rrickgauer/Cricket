@@ -1,0 +1,12 @@
+.form-group label {
+  font-weight: bold;
+}
+
+img.score-pic {
+  height: 25px;
+  width: 25px;
+}
+
+#score-table tbody tr {
+  height: 30px;
+}

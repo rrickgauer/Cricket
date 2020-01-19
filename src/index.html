@@ -19,55 +19,175 @@
   <div class="container">
     <h1>Cricket</h1>
 
-    
+    <div id="new-game-section">
+      <div id="player-info">
+        <div class="form-group form-group-player">
+          <label>Player name:</label>
+          <input type="text" class="form-control name-input" value="Ryan">
+        </div>
+
+        <div class="form-group form-group-player">
+          <label>Player name:</label>
+          <input type="text" class="form-control name-input" value="jimmy">
+        </div>
+
+        <div class="form-group form-group-player">
+          <label>Player name:</label>
+          <input type="text" class="form-control name-input" value="nick">
+        </div>
+
+        <div class="form-group form-group-player">
+          <label>Player name:</label>
+          <input type="text" class="form-control name-input" value="marcos">
+        </div>
+
+
+
+      </div>
+
+      <button type="button" name="button" class="btn btn-primary" onclick="addPlayerInput()">Add player</button>
+      <button type="button" name="button" class="btn btn-secondary" onclick="removePlayerInput()">Drop player</button>
+      <button type="button" name="button" class="btn btn-success" onclick="startGame()">Start game</button>
+    </div>
+
+    <div id="score-board-section">
+
+      <table class="table table-bordered" id="score-table">
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-score-modal">
+        Add score
+      </button>
+
+      <!-- set score modal -->
+      <div class="modal" id="add-score-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Set player score</h5>
+              <button type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+
+              <!-- player select -->
+              <div class="form-group">
+                <label for="player-score-select">Select player:</label>
+                <select class="form-control" id="player-score-select">
+                </select>
+              </div>
+
+              <!-- dart 1 -->
+              <div class="form-row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="dart1">Dart 1:</label>
+                    <select class="form-control" id="dart1">
+                      <option value="20">20</option>
+                      <option value="19">19</option>
+                      <option value="18">18</option>
+                      <option value="17">17</option>
+                      <option value="16">16</option>
+                      <option value="15">15</option>
+                      <option value="bulls">Bulls</option>
+                      <option value="miss">Miss</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    <label for="quantity1">Quantity:</label>
+                    <select class="form-control" id="quantity1">
+                      <option value="1" selected>Single</option>
+                      <option value="2">Double</option>
+                      <option value="3">Triple</option>
+                    </select>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- dart 2 -->
+              <div class="form-row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="dart2">Dart 2:</label>
+                    <select class="form-control" id="dart2">
+                      <option value="20">20</option>
+                      <option value="19">19</option>
+                      <option value="18">18</option>
+                      <option value="17">17</option>
+                      <option value="16">16</option>
+                      <option value="15">15</option>
+                      <option value="bulls">Bulls</option>
+                      <option value="miss">Miss</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    <label for="quantity2">Quantity:</label>
+                    <select class="form-control" id="quantity2">
+                      <option value="1" selected>Single</option>
+                      <option value="2">Double</option>
+                      <option value="3">Triple</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- dart 3 -->
+              <div class="form-row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="dart3">Dart 3:</label>
+                    <select class="form-control" id="dart3">
+                      <option value="20">20</option>
+                      <option value="19">19</option>
+                      <option value="18">18</option>
+                      <option value="17">17</option>
+                      <option value="16">16</option>
+                      <option value="15">15</option>
+                      <option value="bulls">Bulls</option>
+                      <option value="miss">Miss</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    <label for="quantity3">Quantity:</label>
+                    <select class="form-control" id="quantity3">
+                      <option value="1" selected>Single</option>
+                      <option value="2">Double</option>
+                      <option value="3">Triple</option>
+                    </select>
+                  </div>
+                </div>
+
+
+              </div>
 
 
 
 
 
+            </div>
 
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" onclick="addScore()">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
 
 
 
