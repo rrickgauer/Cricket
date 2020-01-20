@@ -1,5 +1,15 @@
 var players = [];
 
+var isNumberOpen = {
+  num15: true,
+  num16: true,
+  num17: true,
+  num18: true,
+  num19: true,
+  num20: true,
+  numBulls: true
+};
+
 $(document).ready(function() {
   $("#score-board-section").hide();
 });
